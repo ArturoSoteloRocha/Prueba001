@@ -1,0 +1,24 @@
+<html>
+    <head>
+        <title>Calculadora</title>
+    </head>
+    <body>
+        <script>
+            function calcular() {
+                var num1=+document.getElementById('numero1').value;
+                var num2=+document.getElementById('numero2').value;
+                var res;
+                res=num1+num2;
+                //res = Number.parseInt(num1)+Number.parseInt(num2);
+                //window.alert(res);
+                document.getElementById('esResultado').value=res;
+            }
+        </script>
+		<h1>Ejemplo de una Suma</h1>
+		<p>Bienbenido a la primera pagina web</p>
+        <input type="text" id="numero1"/>+
+        <input type="text" id="numero2"/>
+        <button onclick="calcular()">click</button>
+        <input type="text" id="esResultado"/>
+    </body>
+</html>
